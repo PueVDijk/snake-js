@@ -20,7 +20,7 @@ Assignment +:
 Give the snake a random color whenever an apple is eaten. Make sure it's not too dark or you won't be able to see the snake.✅
 
 Assignment +:
-Increase the snake's speed for every x amount of apples that are eaten.
+Increase the snake's speed for every x amount of apples that are eaten.✅
 
 Assignment +:
 Add a golden apple to the game. It has a 10% chance to appear instead of the regular apple every time an apple is eaten.

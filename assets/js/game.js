@@ -5,11 +5,13 @@ Window.Game = {};
     // Retrieve the context of the canvas html element, compare it to taking the image data from an image
     let context = canvas.getContext('2d');
     let scoreText = document.getElementById('score');
+    let appleText = document.getElementById('apple');
     
     // Startup values
     let frameCounter = 0;
     let acceptInput = true;
     let score = 0;
+    let applesEaten = 0;
     let pauze = false;
 
     // Limits the game speed by reducing the rate at which frames are drawn
@@ -78,6 +80,7 @@ Window.Game = {};
         resetScore();
         resetSnake();
         randomizeApple();
+        frameCounterLimit = 15;
     }
 
     function GameOver()
@@ -91,11 +94,14 @@ Window.Game = {};
 
     function resetScore() {
         score = 0;
+        applesEaten = 0;
         updateScore();
     }
 
     // Increase the length of the snake and place the apple at a new location
     function eatApple() {
+        applesEaten++
+
         // Increase the snake's length
         snake.length++;
 
@@ -104,6 +110,11 @@ Window.Game = {};
 
         // Update the score text
         updateScore();
+
+        // Increase speed every 5 apples, up to a maximum speed
+        if (applesEaten % 5 === 0 && frameCounterLimit > 3) {
+            frameCounterLimit--;
+        }
 
         // Give snake a random color
         // List of possible colors that are not too dark
@@ -159,6 +170,7 @@ Window.Game = {};
     // Updates the score text
     function updateScore() {
         scoreText.textContent = 'Score: ' + score;
+        appleText.textContent = 'Apples: ' + applesEaten;
     }
 
     // Draws the apple on the screen
