@@ -51,23 +51,25 @@ Window.Game = {};
         moveSnake();
     }
 
-    // When the snake reaches a horizontal or vertical edge, wrap it around to the opposite edge
+    // Check if the snake reaches a horizontal or vertical edge
     function checkEdgeCollision() {
         // Check horizontal edges
         if (snake.x < 0) {
-            snake.x = canvas.width - CELL_SIZE;
+            GameOver();
         }
         else if (snake.x >= canvas.width) {
-            snake.x = 0;
+            GameOver();
         }
 
         // Check vertical edges
         if (snake.y < 0) {
-            snake.y = canvas.height - CELL_SIZE;
+            GameOver();
         }
         else if (snake.y >= canvas.height) {
-            snake.y = 0;
+            GameOver();
         }
+
+        // Ik kan uitleggen waarom ik kies voor GameOver() I.P.V. resetGame().
     }
     
     function resetGame() {

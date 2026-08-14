@@ -11,7 +11,7 @@ Look at how controls for the other two directions were implemented near the bott
 
 Assignment 4:
 Right now the snake wraps around when it reaches the edge of the game screen. In some versions of the game hitting the edge ends the game.
-Make the necessary changes to the checkEdgeCollision() function so that the game resets when the snake hits any of the edges of the screen.
+Make the necessary changes to the checkEdgeCollision() function so that the game resets when the snake hits any of the edges of the screen.✅
 
 Assignment 5:
 The score system doesn't work. Give the player points whenever an apple is eaten by increasing the value of the score variable.
