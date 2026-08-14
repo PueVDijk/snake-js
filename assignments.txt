@@ -17,7 +17,7 @@ Assignment 5:
 The score system doesn't work. Give the player points whenever an apple is eaten by increasing the value of the score variable.✅
 
 Assignment +:
-Give the snake a random color whenever an apple is eaten. Make sure it's not too dark or you won't be able to see the snake.
+Give the snake a random color whenever an apple is eaten. Make sure it's not too dark or you won't be able to see the snake.✅
 
 Assignment +:
 Increase the snake's speed for every x amount of apples that are eaten.

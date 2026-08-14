@@ -105,6 +105,20 @@ Window.Game = {};
         // Update the score text
         updateScore();
 
+        // Give snake a random color
+        // List of possible colors that are not too dark
+        let colors = ["red", "green", "blue", "yellow", "orange", "pink", "lime", "cyan", "magenta", "violet", "turquoise"];
+
+        // Pick a random color out of the list
+        let newColor = colors[Math.floor(Math.random() * colors.length)];
+
+        // Pick a new color if it is the same as the current color
+        while (newColor === snake.color) {
+            newColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        snake.color = newColor;
+
         // Place a new apple on a random location in the canvas
         randomizeApple();
     }
