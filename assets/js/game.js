@@ -160,10 +160,22 @@ Window.Game = {};
             snake.dy = 0;
             acceptInput = false;
         }
+        // Change direction when the right arrow key is pressed and is not moving on the X axis
+        else if (keyBoardEvent.which === KEY_RIGHT && snake.dx === 0) {
+            snake.dx = +CELL_SIZE;
+            snake.dy = 0;
+            acceptInput = false;
+        }
         // Change direction when the up arrow key is pressed and is not moving on the Y axis
         else if (keyBoardEvent.which === KEY_UP && snake.dy === 0) {
             snake.dx = 0;
             snake.dy = -CELL_SIZE;
+            acceptInput = false;
+        }
+        // Change direction when the down arrow key is pressed and is not moving on the Y axis
+        else if (keyBoardEvent.which === KEY_DOWN && snake.dy === 0) {
+            snake.dx = 0;
+            snake.dy = +CELL_SIZE
             acceptInput = false;
         }
     });

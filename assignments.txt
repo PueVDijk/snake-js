@@ -7,7 +7,7 @@ Make it move more frequently by reducing the frame counter limit near the top of
 
 Assignment 3:
 The input controls only work in two directions. Implement controls for the other two directions.
-Look at how controls for the other two directions were implemented near the bottom of game.js.
+Look at how controls for the other two directions were implemented near the bottom of game.js.✅
 
 Assignment 4:
 Right now the snake wraps around when it reaches the edge of the game screen. In some versions of the game hitting the edge ends the game.
