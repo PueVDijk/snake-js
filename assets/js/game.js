@@ -106,7 +106,11 @@ Window.Game = {};
         snake.length++;
 
         //give scorepoints
-        score++;
+        if (apple.golden === true) {
+            score += 5;
+        } else {
+            score++;
+        }
 
         // Update the score text
         updateScore();
