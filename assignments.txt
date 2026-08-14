@@ -1,5 +1,5 @@
 Assignment 1:
-The canvas is rather small. Increase it by adjusting the canvas size value in settings.js.
+The canvas is rather small. Increase it by adjusting the canvas size value in settings.js.✅
 
 Assignment 2:
 The snake moves once every 30 frames. Now that the canvas size has been increased this is rather slow.
