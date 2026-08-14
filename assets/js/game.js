@@ -13,7 +13,7 @@ Window.Game = {};
     let pauze = false;
 
     // Limits the game speed by reducing the rate at which frames are drawn
-    let frameCounterLimit = 30;
+    let frameCounterLimit = 15;
 
     // Set the canvas height and width
     canvas.height = canvas.width = CANVAS_SIZE * CELL_SIZE;
