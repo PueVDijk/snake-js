@@ -99,6 +99,9 @@ Window.Game = {};
         // Increase the snake's length
         snake.length++;
 
+        //give scorepoints
+        score++;
+
         // Update the score text
         updateScore();
 

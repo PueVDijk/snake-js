@@ -14,7 +14,7 @@ Right now the snake wraps around when it reaches the edge of the game screen. In
 Make the necessary changes to the checkEdgeCollision() function so that the game resets when the snake hits any of the edges of the screen.✅
 
 Assignment 5:
-The score system doesn't work. Give the player points whenever an apple is eaten by increasing the value of the score variable.
+The score system doesn't work. Give the player points whenever an apple is eaten by increasing the value of the score variable.✅
 
 Assignment +:
 Give the snake a random color whenever an apple is eaten. Make sure it's not too dark or you won't be able to see the snake.
