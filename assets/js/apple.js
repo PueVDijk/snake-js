@@ -8,7 +8,7 @@ let apple = {
 
     // The apple's color
     color: 'red',
-    golden = false
+    golden: false
 };
 
 // Get a random integer in a specific range
